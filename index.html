@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 10px solid lightblue;
+        }
+        .no-min {
+            width: 350px;
+            height: 100px;
+        }
+        .min-max {
+            min-width: 350px;
+            max-width: 500px;
+            min-height: 100px;
+        }
+        .overflow {
+            overflow: auto;
+        }
+        .overflow-wrap {
+            overflow-wrap: break-word;
+        }
+        .overflow-hide {
+            overflow: hidden;
+        }
+        span {
+            color: red;
+        }
+        .floating {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="overflow floating no-min"><b>{ overflow: auto; }</b> <br> Lorem ipsum dolor sit amet consectetur <span>this_is_a_very_long_word_created_only_to_show_how_to_deal_with_it</span> adipisicing elit. Eius accusantium, maiores quam odit accusamus aperiam! Fuga nulla dolores itaque a quasi quia aliquid magnam, blanditiis reiciendis vero natus aperiam ullam, deserunt praesentium aliquam quo enim sint laudantium temporibus esse. Quis ex, beatae laudantium enim pariatur consequatur debitis id officiis vero voluptates perspiciatis eum harum sapiente necessitatibus impedit dolor, dicta eos alias modi. Neque aliquam consequuntur alias eius! Cumque quia corrupti perspiciatis! Vel distinctio sunt fugiat iusto repellendus asperiores, rerum doloremque. Recusandae dolore fugit debitis temporibus exercitationem explicabo, quisquam sint quas, nesciunt tempore quo a voluptatem quis perferendis facere? Molestiae, animi.</div>
+    <div class="overflow-wrap overflow-hide floating no-min"><b>{ overflow-wrap: break-word; <br> overflow: hidden; }</b> <br> Lorem ipsum dolor sit amet consectetur <span>this_is_a_very_long_word_created_only_to_show_how_to_deal_with_it</span> adipisicing elit. Eius accusantium, maiores quam odit accusamus aperiam! Fuga nulla dolores itaque a quasi quia aliquid magnam, blanditiis reiciendis vero natus aperiam ullam, deserunt praesentium aliquam quo enim sint laudantium temporibus esse. Quis ex, beatae laudantium enim pariatur consequatur debitis id officiis vero voluptates perspiciatis eum harum sapiente necessitatibus impedit dolor, dicta eos alias modi. Neque aliquam consequuntur alias eius! Cumque quia corrupti perspiciatis! Vel distinctio sunt fugiat iusto repellendus asperiores, rerum doloremque. Recusandae dolore fugit debitis temporibus exercitationem explicabo, quisquam sint quas, nesciunt tempore quo a voluptatem quis perferendis facere? Molestiae, animi.</div>
+    <div class="floating min-max"><b>{ overflow: visible; (default) <br> min-width: 350px; <br> max-width: 500px; <br> min-height: 100px; }</b> <br> Lorem ipsum dolor sit amet consectetur <span>this_is_a_very_long_word_created_only_to_show_how_to_deal_with_it</span> adipisicing elit. Eius accusantium, maiores quam odit accusamus aperiam! Fuga nulla dolores itaque a quasi quia aliquid magnam, blanditiis reiciendis vero natus aperiam ullam, deserunt praesentium aliquam quo enim sint laudantium temporibus esse. Quis ex, beatae laudantium enim pariatur consequatur debitis id officiis vero voluptates perspiciatis eum harum sapiente necessitatibus impedit dolor, dicta eos alias modi. Neque aliquam consequuntur alias eius! Cumque quia corrupti perspiciatis! Vel distinctio sunt fugiat iusto repellendus asperiores, rerum doloremque. Recusandae dolore fugit debitis temporibus exercitationem explicabo, quisquam sint quas, nesciunt tempore quo a voluptatem quis perferendis facere? Molestiae, animi.</div>
+    <div class="floating no-min"><b>{ overflow: visible; (default) }</b> <br> Lorem ipsum dolor sit amet consectetur <span>this_is_a_very_long_word_created_only_to_show_how_to_deal_with_it</span> adipisicing elit. Eius accusantium, maiores quam odit accusamus aperiam! Fuga nulla dolores itaque a quasi quia aliquid magnam, blanditiis reiciendis vero natus aperiam ullam, deserunt praesentium aliquam quo enim sint laudantium temporibus esse. Quis ex, beatae laudantium enim pariatur consequatur debitis id officiis vero voluptates perspiciatis eum harum sapiente necessitatibus impedit dolor, dicta eos alias modi. Neque aliquam consequuntur alias eius! Cumque quia corrupti perspiciatis! Vel distinctio sunt fugiat iusto repellendus asperiores, rerum doloremque. Recusandae dolore fugit debitis temporibus exercitationem explicabo, quisquam sint quas, nesciunt tempore quo a voluptatem quis perferendis facere? Molestiae, animi.</div>
+</body>
+</html>
